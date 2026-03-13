@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("notes")
+    order:
+      - file.name
+      - file.ctime
+      - file.embeds
+      - file.ext
+    sort:
+      - property: file.name
+        direction: ASC
